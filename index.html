@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adnan Mayof | Portfolio</title>
+
+    <style>
+        /* GENERAL STYLING */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #263238;
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION BAR */
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #172554;
+            padding: 18px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* HIGHLIGHT ACTIVE SECTION */
+        nav a.active {
+            color: #facc15;
+            border-bottom: 3px solid #facc15;
+            padding-bottom: 5px;
+        }
+
+        nav a:hover {
+            color: #facc15;
+        }
+
+        /* PAGE SECTIONS */
+        section {
+            min-height: 100vh;
+            padding: 100px 12%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            scroll-margin-top: 65px;
+        }
+
+        section h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 18px;
+            max-width: 750px;
+        }
+
+        /* INDIVIDUAL SECTION COLORS */
+        #home {
+            background-color: #eff6ff;
+        }
+
+        #about {
+            background-color: #ffffff;
+        }
+
+        #experience {
+            background-color: #f1f5f9;
+        }
+
+        #projects {
+            background-color: #ffffff;
+        }
+
+        #skills {
+            background-color: #eff6ff;
+        }
+
+        #contact {
+            background-color: #172554;
+            color: white;
+        }
+
+        /* BUTTON */
+        .button {
+            display: inline-block;
+            background-color: #172554;
+            color: white;
+            padding: 12px 24px;
+            margin-top: 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            width: fit-content;
+        }
+
+        .button:hover {
+            background-color: #334e9b;
+        }
+
+        /* PROJECT CARDS */
+        .project {
+            background: #f1f5f9;
+            padding: 20px;
+            margin: 12px 0;
+            border-radius: 8px;
+            max-width: 750px;
+        }
+
+        .project a {
+            color: #1d4ed8;
+        }
+
+        /* MOBILE NAVIGATION */
+        @media (max-width: 650px) {
+            nav {
+                gap: 12px;
+                flex-wrap: wrap;
+                padding: 14px 8px;
+            }
+
+            nav a {
+                font-size: 13px;
+            }
+
+            section {
+                padding: 80px 8%;
+            }
+
+            section h1 {
+                font-size: 32px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <!-- HOME -->
+    <section id="home">
+
+        <h1>Adnan Mayof</h1>
+
+        <h2>Instructional Design | Data Analytics | Front-End Development</h2>
+
+        <p>
+            I am an education researcher and emerging front-end developer
+            interested in building interactive digital experiences,
+            analyzing user behavior, and solving instructional problems.
+        </p>
+
+        <a href="#projects" class="button">Explore My Projects</a>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+
+        <h1>About Me</h1>
+
+        <p>
+            My background combines educational research, data analysis,
+            instructional design, and technology.
+        </p>
+
+        <p>
+            I am interested in using technology to improve learning
+            experiences and help people make evidence-informed decisions.
+            I am currently developing my skills in HTML, CSS, and JavaScript.
+        </p>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+
+        <h1>Professional Experience</h1>
+
+        <h2>Postdoctoral Research Associate</h2>
+
+        <p>
+            Washington State University
+        </p>
+
+        <p>
+            Inclusive Undergraduate Education
+        </p>
+
+        <p>
+            Research, learning analytics, student engagement,
+            faculty teaching practices, and inclusive learning design.
+        </p>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+
+        <h1>Projects</h1>
+
+        <div class="project">
+
+            <h2>A/B Testing Experiment</h2>
+
+            <p>
+                Designed an experiment comparing bar charts and line charts
+                to investigate how visualization design affects
+                people's ability to identify information.
+            </p>
+
+            <a href="https://adnan-mayof.github.io/reddit-ab-test/"
+               target="_blank">
+                View Project
+            </a>
+
+        </div>
+
+        <div class="project">
+
+            <h2>Interactive Learning Tools</h2>
+
+            <p>
+                Developing interactive web-based learning experiences
+                using HTML, CSS, and JavaScript.
+            </p>
+
+        </div>
+
+        <div class="project">
+
+            <h2>Data Analytics</h2>
+
+            <p>
+                Exploring data visualization, statistical analysis,
+                and evidence-informed decision-making.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills">
+
+        <h1>Skills</h1>
+
+        <h2>Programming</h2>
+        <p>HTML, CSS, JavaScript, Python, R</p>
+
+        <h2>Analytics</h2>
+        <p>Data Visualization, A/B Testing, Statistical Analysis</p>
+
+        <h2>Education and Research</h2>
+        <p>Instructional Design, Learning Analytics, Evidence Synthesis</p>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+
+        <h1>Contact</h1>
+
+        <p>
+            Interested in collaborating on projects involving
+            instructional design, analytics, and web development?
+        </p>
+
+        <p>
+            Let's connect!
+        </p>
+
+    </section>
+
+
+    <!-- JAVASCRIPT: SCROLLSPY -->
+    <script>
+
+        // Select all website sections
+        const sections = document.querySelectorAll("section");
+
+        // Select all navigation links
+        const navigationLinks = document.querySelectorAll("nav a");
+
+
+        // Detect which section is currently visible
+        const observer = new IntersectionObserver((entries) => {
+
+            entries.forEach((entry) => {
+
+                if (entry.isIntersecting) {
+
+                    // Get the ID of the visible section
+                    const currentSection = entry.target.id;
+
+                    // Check every navigation link
+                    navigationLinks.forEach((link) => {
+
+                        // Remove previous highlight
+                        link.classList.remove("active");
+
+                        // Highlight the matching section link
+                        if (link.getAttribute("href") === "#" + currentSection) {
+
+                            link.classList.add("active");
+
+                        }
+
+                    });
+
+                }
+
+            });
+
+        }, {
+
+            threshold: 0.5
+
+        });
+
+
+        // Observe every section
+        sections.forEach((section) => {
+
+            observer.observe(section);
+
+        });
+
+    </script>
+
+</body>
+</html>
